@@ -1,0 +1,28 @@
+@mixin button($w){
+    width: $w;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    color: $neutral-white;
+    background-color: $primary-green;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+@mixin headline($w, $text-align){
+    width: $w;
+    font-size: $medium-headline-fs;
+    font-family: Inter-bold;
+    line-height: $medium-lh;
+    text-align: $text-align;
+    margin: 0;
+    color: $dark-grey;
+}
+
+@mixin button-small{
+    padding: 7px;
+    font-size: 0.5rem;
+    width: 80px;
+}
